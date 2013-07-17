@@ -1,0 +1,11 @@
+C:\h\soapClient\soapClient\soapClient\bin\Release\mbrMaxClient.exe.config
+C:\h\soapClient\soapClient\soapClient\obj\Release\Interop.ccCSrvr3.dll
+C:\h\soapClient\soapClient\soapClient\obj\Release\Interop.ccKrnl.dll
+C:\h\soapClient\soapClient\soapClient\obj\Release\Interop.FastIndex2.dll
+C:\h\soapClient\soapClient\soapClient\obj\Release\Interop.MSXML2.dll
+C:\h\soapClient\soapClient\soapClient\obj\Release\Interop.VBA.dll
+C:\h\soapClient\soapClient\soapClient\obj\Release\soapClient.vbproj.ResolveComReference.cache
+C:\h\soapClient\soapClient\soapClient\obj\Release\mbrMaxClient.exe
+C:\h\soapClient\soapClient\soapClient\obj\Release\mbrMaxClient.xml
+C:\h\soapClient\soapClient\soapClient\obj\Release\mbrMaxClient.pdb
+C:\h\soapClient\soapClient\soapClient\obj\Release\mbrMaxClient.XmlSerializers.dll

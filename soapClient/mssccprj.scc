@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[soapClient.sln]
+SCC_Aux_Path = "\\s10.kma.net\fileserver\vss"
+SCC_Project_Name = "$/soapClient/soapClient", RNCCAAAA

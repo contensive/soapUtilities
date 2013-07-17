@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+mbrMaxClient
+</name>
+</assembly>
+<members>
+<member name="M:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.#ctor">
+	<remarks/>
+</member><member name="E:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.SoapServicesTxtCompleted">
+	<remarks/>
+</member><member name="E:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.SoapServicesBlobCompleted">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.SoapServicesTxt(System.String)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.SoapServicesTxtAsync(System.String)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.SoapServicesTxtAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.SoapServicesBlob(System.String)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.SoapServicesBlobAsync(System.String)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.SoapServicesBlobAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebServiceWse.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:mbrMaxClient.mbrMax.MbrMaxWebServiceWse">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebService.#ctor">
+	<remarks/>
+</member><member name="E:mbrMaxClient.mbrMax.MbrMaxWebService.SoapServicesTxtCompleted">
+	<remarks/>
+</member><member name="E:mbrMaxClient.mbrMax.MbrMaxWebService.SoapServicesBlobCompleted">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebService.SoapServicesTxt(System.String)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebService.SoapServicesTxtAsync(System.String)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebService.SoapServicesTxtAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebService.SoapServicesBlob(System.String)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebService.SoapServicesBlobAsync(System.String)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebService.SoapServicesBlobAsync(System.String,System.Object)">
+	<remarks/>
+</member><member name="M:mbrMaxClient.mbrMax.MbrMaxWebService.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:mbrMaxClient.mbrMax.MbrMaxWebService">
+	<remarks/>
+</member><member name="T:mbrMaxClient.mbrMax.SoapServicesTxtCompletedEventHandler">
+	<remarks/>
+</member><member name="P:mbrMaxClient.mbrMax.SoapServicesTxtCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:mbrMaxClient.mbrMax.SoapServicesTxtCompletedEventArgs">
+	<remarks/>
+</member><member name="T:mbrMaxClient.mbrMax.SoapServicesBlobCompletedEventHandler">
+	<remarks/>
+</member><member name="P:mbrMaxClient.mbrMax.SoapServicesBlobCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:mbrMaxClient.mbrMax.SoapServicesBlobCompletedEventArgs">
+	<remarks/>
+</member><member name="P:mbrMaxClient.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:mbrMaxClient.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:mbrMaxClient.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
