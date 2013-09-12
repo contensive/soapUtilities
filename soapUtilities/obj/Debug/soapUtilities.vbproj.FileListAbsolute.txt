@@ -1,0 +1,10 @@
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\bin\Debug\soapUtilities.dll
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\bin\Debug\soapUtilities.pdb
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\bin\Debug\soapUtilities.xml
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Debug\soapUtilities.dll
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Debug\soapUtilities.xml
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Debug\soapUtilities.pdb
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Debug\Resources.resources

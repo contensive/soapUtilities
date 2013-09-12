@@ -19,15 +19,17 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.requestAddr = New System.Windows.Forms.TextBox
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.reqEnv = New System.Windows.Forms.TextBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.TextBox3 = New System.Windows.Forms.TextBox
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.Label4 = New System.Windows.Forms.Label
+        Me.requestAddr = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.reqEnv = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.contents = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'requestAddr
@@ -36,7 +38,7 @@ Partial Class Form1
         Me.requestAddr.Name = "requestAddr"
         Me.requestAddr.Size = New System.Drawing.Size(266, 20)
         Me.requestAddr.TabIndex = 1
-        Me.requestAddr.Text = "http://173.209.224.240:8087/4DSOAP/"
+        Me.requestAddr.Text = "http://info.asm.org/ws/phpSoap/ASMSoapServer.php"
         '
         'Button1
         '
@@ -49,11 +51,11 @@ Partial Class Form1
         '
         'reqEnv
         '
-        Me.reqEnv.Location = New System.Drawing.Point(28, 88)
+        Me.reqEnv.Location = New System.Drawing.Point(28, 284)
         Me.reqEnv.Multiline = True
         Me.reqEnv.Name = "reqEnv"
         Me.reqEnv.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.reqEnv.Size = New System.Drawing.Size(530, 144)
+        Me.reqEnv.Size = New System.Drawing.Size(530, 79)
         Me.reqEnv.TabIndex = 3
         '
         'Label1
@@ -68,7 +70,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(25, 72)
+        Me.Label2.Location = New System.Drawing.Point(25, 268)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(84, 13)
         Me.Label2.TabIndex = 6
@@ -76,17 +78,17 @@ Partial Class Form1
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(28, 269)
+        Me.TextBox3.Location = New System.Drawing.Point(28, 420)
         Me.TextBox3.Multiline = True
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox3.Size = New System.Drawing.Size(530, 160)
+        Me.TextBox3.Size = New System.Drawing.Size(530, 79)
         Me.TextBox3.TabIndex = 7
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(25, 253)
+        Me.Label3.Location = New System.Drawing.Point(25, 404)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(71, 13)
         Me.Label3.TabIndex = 8
@@ -94,21 +96,39 @@ Partial Class Form1
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(28, 472)
+        Me.TextBox4.Location = New System.Drawing.Point(28, 553)
         Me.TextBox4.Multiline = True
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.TextBox4.Size = New System.Drawing.Size(530, 160)
+        Me.TextBox4.Size = New System.Drawing.Size(530, 76)
         Me.TextBox4.TabIndex = 9
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(25, 456)
+        Me.Label4.Location = New System.Drawing.Point(25, 537)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(63, 13)
         Me.Label4.TabIndex = 10
         Me.Label4.Text = "Node Value"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(25, 87)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(49, 13)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "Contents"
+        '
+        'contents
+        '
+        Me.contents.Location = New System.Drawing.Point(28, 103)
+        Me.contents.Multiline = True
+        Me.contents.Name = "contents"
+        Me.contents.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.contents.Size = New System.Drawing.Size(530, 79)
+        Me.contents.TabIndex = 11
         '
         'Form1
         '
@@ -116,6 +136,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(603, 647)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.contents)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label3)
@@ -140,4 +162,6 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents contents As System.Windows.Forms.TextBox
 End Class

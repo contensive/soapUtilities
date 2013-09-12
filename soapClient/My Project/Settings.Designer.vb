@@ -53,16 +53,6 @@ Namespace My
                 Return defaultInstance
             End Get
         End Property
-        
-        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.WebServiceUrl),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://66.45.41.218:8087/4DSOAP/")>  _
-        Public ReadOnly Property WindowsApplication1_WebReference_MbrMaxWebService() As String
-            Get
-                Return CType(Me("WindowsApplication1_WebReference_MbrMaxWebService"),String)
-            End Get
-        End Property
     End Class
 End Namespace
 
