@@ -105,6 +105,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetDir)$(TargetFileName)" "C:\Program Files\kma\Contensive\Addons"</PostBuildEvent>
+    <PostBuildEvent>copy $(TargetDir)"*.dll" "C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\bin\Release"
+copy $(TargetDir)"*.dll" "C:\Program Files\kma\Contensive\Addons"</PostBuildEvent>
   </PropertyGroup>
 </Project>

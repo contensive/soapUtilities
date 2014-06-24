@@ -1,10 +1,9 @@
 C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\bin\Release\soapUtilities.dll
 C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\bin\Release\soapUtilities.pdb
 C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\bin\Release\soapUtilities.xml
-C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Release\ResolveAssemblyReference.cache
 C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Release\Resources.resources
-C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Release\GenerateResource-ResGen.read.1.tlog
-C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Release\GenerateResource-ResGen.write.1.tlog
 C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Release\soapUtilities.dll
 C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Release\soapUtilities.xml
 C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Release\soapUtilities.pdb
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Release\soapUtilities.vbprojResolveAssemblyReference.cache
+C:\Users\josh\Documents\GitHub\soapUtilities\soapUtilities\obj\Release\soapUtilities.vbproj.GenerateResource.Cache

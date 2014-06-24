@@ -21,15 +21,20 @@ Namespace Contensive.soap
                 '
                 Dim returnEnvelope As New Microsoft.Web.Services3.SoapEnvelope()
                 '
+                fileContent += requestEnvelope & vbCrLf & vbCrLf
                 se.InnerXml = requestEnvelope
-                fileContent = se.ToString
+                fileContent += se.OuterXml & vbCrLf & vbCrLf
                 '
-                System.IO.File.AppendAllText("c:\temp\seleralizedXML.txt", fileContent)
+                System.IO.File.AppendAllText("c:\temp\seleralizedXML3.txt", fileContent)
                 '
                 returnEnvelope = objTCP.RequestResponseMethod(se, responseErrorNumber, responseErrorMessage)
                 '
+                If responseNode = "" Then
+                    responseNode = "//Result"
+                End If
+                '
                 If Not returnEnvelope Is Nothing Then
-                    For Each node As XmlNode In returnEnvelope.SelectNodes("//Result")
+                    For Each node As XmlNode In returnEnvelope.SelectNodes(responseNode)
                         soapResponse = node.InnerText
                     Next
                 End If
@@ -41,16 +46,16 @@ Namespace Contensive.soap
             '
         End Function
         '
-        Public Function getEnvelopex(ByVal method As String, ByVal endPoint As String, ByVal dataNode As String, ByVal envelopeContents As String) As String
+        Public Function getEnvelope(ByVal method As String, ByVal endPoint As String, ByVal dataNode As String, ByVal envelopeContents As String) As String
             Dim s As String = ""
             '
             Try
-                s = "<?xml version=""1.0"" encoding=""ISO-8859-1""?>"
+                s = "<?xml version=""1.0"" encoding=""utf-8""?>"
                 s += "<SOAP-ENV:Envelope SOAP-ENV:encodingStyle=""http://schemas.xmlsoap.org/soap/encoding/"" xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:SOAP-ENC=""http://schemas.xmlsoap.org/soap/encoding/"" xmlns:tns=""http://www.MemberMax.com/namespace/default"">"
                 s += "<SOAP-ENV:Body>"
                 s += "<tns:" & method & " xmlns:tns=""" & endPoint & """>"
                 s += "<" & dataNode & " xsi:type=""xsd:string"">"
-                s += httpUtil.HtmlEncode(envelopeContents)
+                s += httpUtil.HtmlEncode(convertUtfTo1252(envelopeContents))
                 s += "</" & dataNode & ">"
                 s += "</tns:" & method & ">"
                 s += "</SOAP-ENV:Body>"
@@ -73,6 +78,19 @@ Namespace Contensive.soap
         Private Sub HandleError(ByVal MethodName As String, ByVal ErrNumber As Long, ByVal ErrSource As String, ByVal ErrDescription As String)
             appendLog("Error in " & MethodName & " - " & ErrDescription & " [" & ErrNumber & " - " & ErrSource & "]")
         End Sub
+        '
+        Private Function convertUtfTo1252(ByVal source As String) As String
+            Dim b() As Byte
+            Dim wind1252 As System.Text.Encoding = Encoding.GetEncoding(1252)
+            Dim utf8 As System.Text.Encoding = Encoding.UTF8
+            Dim unicode As System.Text.Encoding = Encoding.Unicode
+            '
+            'b = unicode.GetBytes(source)
+            b = utf8.GetBytes(source)
+            b = Encoding.Convert(utf8, wind1252, b)
+            b = Encoding.Convert(utf8, wind1252, b)
+            Return wind1252.GetString(b)
+        End Function
         '
     End Class
     '

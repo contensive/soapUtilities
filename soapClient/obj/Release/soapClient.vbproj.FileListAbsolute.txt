@@ -19,15 +19,14 @@ C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\bin\Release\soapUtilitie
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\bin\Release\Interop.FastIndex2.dll
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\bin\Release\Interop.MSXML2.dll
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\bin\Release\Interop.VBA.dll
-C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\ResolveAssemblyReference.cache
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\Interop.FastIndex2.dll
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\Interop.MSXML2.dll
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\Interop.VBA.dll
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\soapClient.vbproj.ResolveComReference.cache
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\mbrMaxClient.Form1.resources
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\mbrMaxClient.Resources.resources
-C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\GenerateResource-ResGen.read.1.tlog
-C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\GenerateResource-ResGen.write.1.tlog
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\mbrMaxClient.exe
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\mbrMaxClient.xml
 C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\mbrMaxClient.pdb
+C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\soapClient.vbprojResolveAssemblyReference.cache
+C:\Users\josh\Documents\GitHub\soapUtilities\soapClient\obj\Release\soapClient.vbproj.GenerateResource.Cache

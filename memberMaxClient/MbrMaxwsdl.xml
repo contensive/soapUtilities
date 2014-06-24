@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- this WSDL file was created by Joshua Capy -->
+<definitions name="MbrMaxWebService" targetNamespace="http://www.MemberMax.com/namespace/default" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.MemberMax.com/namespace/default" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<message name="SoapServicesTxtRequest">
+		<part name="inText" type="xsd:string"/>
+	</message>
+	<message name="SoapServicesBlobRequest">
+		<part name="inText" type="xsd:string"/>
+	</message>
+	<message name="SoapServicesTxtResponse">
+		<part name="outText" type="xsd:string"/>
+	</message>
+	<message name="SoapServicesBlobResponse">
+		<part name="outBlob" type="xsd:base64Binary"/>
+	</message>
+	<portType name="MbrMaxWebServicePortType">
+		<operation name="SoapServicesTxt">
+			<input message="tns:SoapServicesTxtRequest"/>
+			<output message="tns:SoapServicesTxtResponse"/>
+		</operation>
+		<operation name="SoapServicesBlob">
+			<input message="tns:SoapServicesBlobRequest"/>
+			<output message="tns:SoapServicesBlobResponse"/>
+		</operation>
+	</portType>
+	<binding name="MbrMaxWebServiceBinding" type="tns:MbrMaxWebServicePortType">
+	<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="SoapServicesTxt">
+<documentation>no documentation is available</documentation>
+			<soap:operation soapAction="MbrMaxWebService#SoapServicesTxt"/>
+			<input>
+				<soap:body use="encoded" namespace="http://www.MemberMax.com/namespace/default" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="http://www.MemberMax.com/namespace/default" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+		<operation name="SoapServicesBlob">
+<documentation>no documentation is available</documentation>
+			<soap:operation soapAction="MbrMaxWebService#SoapServicesBlob"/>
+			<input>
+				<soap:body use="encoded" namespace="http://www.MemberMax.com/namespace/default" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</input>
+			<output>
+				<soap:body use="encoded" namespace="http://www.MemberMax.com/namespace/default" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+			</output>
+		</operation>
+	</binding>
+	<service name="MbrMaxWebService">
+		<documentation></documentation>
+		<port name="MbrMaxWebServicePort" binding="tns:MbrMaxWebServiceBinding">
+			
+			<soap:address location="http://10.0.0.10:8080/4DSOAP/"/>  
+		</port>
+	</service>
+</definitions>
